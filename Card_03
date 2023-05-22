@@ -1,0 +1,68 @@
+Card_03 = 
+
+
+Var vTitulo_1 = "Total Faturamento"
+
+Var vTitulo_2 = "Last Year "
+
+Var vMedida_1 = "1.000.000"
+
+Var vMedida_2 = "00.00%"
+
+
+Var vIcon = 
+    " 
+       <svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='1em' height='1em' preserveAspectRatio='xMidYMid meet' viewBox='0 0 48 48'><path fill='currentColor' fill-rule='evenodd' d='M24.04 6c-4.517 0-8.633 1.492-11.068 2.711c-.22.11-.425.218-.616.322c-.378.206-.7.398-.956.567l2.77 4.078l1.304.519c5.096 2.571 11.93 2.571 17.027 0l1.48-.768l2.62-3.829a15.503 15.503 0 0 0-1.69-.957C32.489 7.437 28.472 6 24.04 6Zm-6.443 4.616a24.579 24.579 0 0 1-2.901-.728C16.977 8.875 20.377 7.8 24.039 7.8c2.537 0 4.936.516 6.92 1.17c-2.325.327-4.806.882-7.17 1.565c-1.86.538-4.034.48-6.192.081Zm15.96 5.064l-.245.124c-5.607 2.828-13.043 2.828-18.65 0l-.232-.118C6.008 24.927-.422 41.997 24.04 41.997c24.46 0 17.873-17.389 9.517-26.317ZM23 24a2 2 0 0 0 0 4v-4Zm2-2v-1h-2v1a4 4 0 0 0 0 8v4a2 2 0 0 1-1.886-1.333a1 1 0 1 0-1.886.666A4.001 4.001 0 0 0 23 36v1h2v-1a4 4 0 1 0 0-8v-4c.87 0 1.611.555 1.887 1.333a1 1 0 1 0 1.885-.666A4.001 4.001 0 0 0 25 22Zm0 8v4a2 2 0 1 0 0-4Z' clip-rule='evenodd'/></svg>
+    "
+
+Return
+
+"
+<style>
+
+    /* *****************************************************
+   ÍNICIO FORMATAÇÕES
+    ***************************************************** */
+
+    :root
+    {
+        --family_fonte: calibri;
+
+        --background_color_1: #BF4000;
+        --background_color_2: #015EAF;
+        --background_border: 8;
+    
+        --wave_color: #f1f1f1;
+        --wave_opacity: 0.06; /* valores de 0 à 1*/
+
+        --icon_background: #f1f1f1;
+        --icon_border: #f1f1f1; 
+
+
+        --cor_line: #f1f1f1;
+        
+        --title_1_color: #f1f1f1;
+        --title_1_font_size: 12;
+
+        --measure_1_color: #f1f1f1;
+        --measure_1_font_size: 20;
+        
+
+        --title_2_color: #f1f1f1;
+        --title_2_font_size: 12;
+
+        --measure_2_color: #f1f1f1;
+        --measure_2_font_size: 12;
+        --measure_2_posicionamento: 0%;
+    }
+     /* *****************************************************
+    FINAL FORMATAÇÕES
+    ***************************************************** */
+
+
+</style>
+
+<body>    
+   <svg viewBox='0 0 300 150' fill='none' xmlns='http://www.w3.org/2000/svg'><rect id='bg' width='300' height='150' rx='8' fill='url(#colorGrad'/> <defs><style> #icon path{fill: var(--icon_background);stroke: var(--icon_border);} #measure_2 { transform: translateX(var(--measure_2_posicionamento));}  #bg{rx:var(--background_border);}</style></defs> <defs> <linearGradient id='colorGrad' x1='0' y1='0' x2='1' y2='1' > <stop offset='0' stop-color='var(--background_color_1)'/> <stop offset='1' stop-color='var(--background_color_2)'/> </linearGradient> </defs> <text id='title_1' fill='var(--title_1_color)' font-family='var(--family_fonte)' font-size='var(--title_1_font_size)'> <tspan x='26' y='63.8636'>" & vTitulo_1 & "</tspan> </text> <text id='measure_1' fill='var(--measure_1_color)' font-family='var(--family_fonte)' font-size='var(--measure_1_font_size)' font-weight='bold'> <tspan x='27' y='92.2727'>" & vMedida_1 & "</tspan></text> <text id='title_2' fill='var(--title_2_color)' font-family='var(--family_fonte)' font-size='var(--title_2_font_size)'> <tspan x='113' y='131.864'>" & vTitulo_2 & "</tspan> </text> <text id='measure_2' f fill='var(--measure_2_color)' font-family='var(--family_fonte)' font-size='var(--measure_2_font_size)' font-weight='bold'> <tspan x='240' y='131.864'>"&vMedida_2&"</tspan> </text> <g id='waves' fill='var(--wave_color)' fill-opacity='var(--wave_opacity)'> <path id='b3' fill-rule='evenodd' clip-rule='evenodd' d='M-110.631 117.665C-115.736 126.663 -99.4975 139.036 -95.3567 150.078C-91.3205 160.842 -94.6796 171.637 -86.5876 181.785C-78.0146 192.537 -64.6846 202.689 -49.7448 207.282C-35.0439 211.801 -20.515 209.213 -7.87055 205.983C2.8754 203.238 8.72342 195.949 16.6458 190.323C23.7432 185.282 30.3038 180.33 36.3806 174.556C44.8918 166.47 62.9491 161.469 59.5976 149.514C56.3125 137.795 32.3012 133.558 21.9489 123.077C10.5642 111.552 13.233 93.5148 -2.90338 86.2396C-18.5871 79.1685 -34.4008 87.1556 -47.8837 91.5927C-58.5623 95.107 -61.964 104.805 -72.0467 108.994C-83.6208 113.803 -105.362 108.378 -110.631 117.665Z' /> <path id='b2' fill-rule='evenodd' clip-rule='evenodd' d='M211.911 -217.867C234.687 -235.21 267.514 -211.974 296.141 -212.193C324.045 -212.406 351.55 -227.615 378.137 -219.139C406.304 -210.158 433.24 -191.08 446.002 -164.412C458.56 -138.171 452.855 -106.741 445.379 -78.6269C439.025 -54.7336 420.685 -37.2165 406.749 -16.795C394.265 1.49981 381.972 18.6394 367.538 35.4393C347.322 58.9694 335.647 99.4218 304.728 101.949C274.421 104.427 261.983 59.1177 234.397 46.3236C204.061 32.2535 157.913 51.7069 138.184 24.7062C119.008 -1.53699 138.496 -39.7733 149.017 -70.5255C157.351 -94.8817 182.035 -109.323 192.141 -132.998C203.742 -160.176 188.401 -199.964 211.911 -217.867Z' /><path id='b1' fill-rule='evenodd' clip-rule='evenodd' d='M222.911 -240.867C245.687 -258.21 278.514 -234.974 307.141 -235.193C335.045 -235.406 362.55 -250.615 389.137 -242.139C417.304 -233.158 444.24 -214.08 457.002 -187.412C469.56 -161.171 463.855 -129.741 456.379 -101.627C450.025 -77.7336 431.685 -60.2165 417.749 -39.795C405.265 -21.5002 392.972 -4.36056 378.538 12.4393C358.322 35.9694 346.647 76.4218 315.728 78.9494C285.421 81.427 272.983 36.1177 245.397 23.3236C215.061 9.25354 168.913 28.7069 149.184 1.70622C130.008 -24.537 149.496 -62.7733 160.017 -93.5255C168.351 -117.882 193.035 -132.323 203.141 -155.998C214.742 -183.176 199.401 -222.964 222.911 -240.867Z' /></g><line id='linha' x1='113' y1='111.75' x2='300' y2='111.75' stroke='var(--cor_line)' stroke-opacity='0.5' stroke-width='0.5'/><svg id='icon' x='0' y='0' viewBox='35 -15 100 100 '> " & vIcon & "</svg></svg>
+</body>
+"
