@@ -1,0 +1,102 @@
+Card_01 = 
+"
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  width: 30vw;
+  height: 40vw;
+  max-width: 190px;
+  max-height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2vw;
+  margin: 0;
+  padding: 0;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 15vw;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    height: 107vw;
+    max-width: 300px;
+    max-height: 400px;
+  }
+
+  .card h2 {
+    font-size: 4vw;
+  }
+
+  .card::before {
+    width: 40vw;
+  }
+}
+</style>
+</head>
+<body>
+  <div class='container'>
+    <div class='card'>
+      <h2>"&"YOUR DAX OR TEXT"&"</h2>
+    </div>
+  </div>
+</body>
+</html>
+
+"
